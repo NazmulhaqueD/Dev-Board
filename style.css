@@ -3,3 +3,7 @@
 body{
   font-family: "Poppins", sans-serif;
 }
+.style-hr{
+    margin: 14px 0;
+    border: 1px dashed rgb(216, 215, 215);
+}
