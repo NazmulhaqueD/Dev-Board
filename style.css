@@ -7,3 +7,8 @@ body{
     margin: 14px 0;
     border: 1px dashed rgb(216, 215, 215);
 }
+#push-of-js > p{
+    background-color: #F4F7FF;
+    padding: 16px;
+    border-radius: 12px;
+}
