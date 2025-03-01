@@ -19,6 +19,9 @@ function completed() {
     document.getElementById('main-task').innerText = countTask;
     document.getElementById('check-number').innerText = countCheckNumber;
 
+    if(countTask === 0){
+    alert('congrates!!! You have completed all the current task');
+    }
 }
 
 function getHistory(id){
@@ -31,4 +34,8 @@ function getHistory(id){
         You have completed the task ${headHistory} at ${currentTime}
     `
     historyContainer.appendChild(newElement);
+}
+
+function randomNumber(){
+    return Math.floor(Math.random() * 256);
 }
