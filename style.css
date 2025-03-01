@@ -7,8 +7,10 @@ body{
     margin: 14px 0;
     border: 1px dashed rgb(216, 215, 215);
 }
-#push-of-js > p{
+
+#history-container > p{
     background-color: #F4F7FF;
     padding: 16px;
     border-radius: 12px;
+    margin: 20px 0;
 }
