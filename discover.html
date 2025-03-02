@@ -5,22 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1>hello world</h1>
-    <p id="date">hello</p>
+<body class="bg-[#F4F7FF] py-6">
+    <div class="main max-w-screen-2xl mx-auto">
+        <header class=" bg-white mb-5 rounded-lg">
+            <nav class="flex justify-between items-centesr px-6 py-3 shadow-lg">
+                <div class="logo-div flex gap-4 items-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="text-3xl">Dev <span class="font-bold">Board</span></h1>
+                </div>
+                <div class="theam-div flex gap-9 items-center">
+                    <button id="back-btn" class="btn bg-[#3752FD] text-[#fafafa]">Back to Desk</button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="blog-section">
+            <h2 class="text-center text-2xl font-bold">Blog</h2>
+        </section>
+    </div>
+
 
     <script>
-        // const newDate = new Date();
-        // console.log(newDate.toLocaleString('en-us', {
-        //     weekday: "long",
-        //     year: "numeric",
-        //     month: "long",
-        //     day: "numeric"
-        // }));
-        
+        document.getElementById('back-btn').addEventListener('click', function(event){
+            window.location.href = 'index.html'
+        })
     </script>
+
 </body>
 
 </html>
